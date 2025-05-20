@@ -57,7 +57,7 @@ If you prefer to compile the document locally:
 4. **View the Output**:
    - The compiled `main.pdf` will be generated in the project directory.
    - Open it with a PDF viewer to verify the output.
-___
+```
 @misc{berger2025transition,
   author       = {Teodor Berger},
   title        = {A Legal and Economic Transition Model for AI Integration in the Workforce},
@@ -67,7 +67,7 @@ ___
   version      = {v1.0.1},
   url          = {https://doi.org/10.5281/zenodo.15475991}
 }
-___
+```
 ## Notes
 
 - Ensure all LaTeX packages specified in `main.tex` are available in your compilation environment. Overleaf typically supports most standard packages.
