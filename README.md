@@ -6,8 +6,8 @@ This repository contains the source files for the ContractsAI project, a LaTeX d
 
 The repository includes the following files:
 
-- **LICENSE**: The license file outlining the terms of use for this project.
 - **ContractsAi.pdf**: The compiled PDF output of the LaTeX document.
+- **LICENSE**: The license file outlining the terms of use for this project.
 - **README.md**: This file, providing an overview and instructions for the project.
 - **main.tex**: The main LaTeX source file, containing the document content and references.
 
