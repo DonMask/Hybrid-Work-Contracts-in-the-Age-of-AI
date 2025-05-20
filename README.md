@@ -25,7 +25,6 @@ To compile and work with this project, you need:
 1. **Upload the Project**:
    - Create a new project in Overleaf.
    - Upload the `main.tex` file (and any additional files referenced in `main.tex`, if applicable) to the Overleaf project.
-   - Ensure all dependencies (e.g., packages specified in `main.tex`) are supported by Overleaf. Common packages like `bibentry`, `natbib`, or `biblatex` (used for references) are typically pre-installed.
 
 2. **Compile the Document**:
    - Open `main.tex` in the Overleaf editor.
@@ -41,34 +40,34 @@ If you prefer to compile the document locally:
 
 1. **Install a LaTeX Distribution**:
    - Download and install a LaTeX distribution like TeX Live (Linux/Mac) or MiKTeX (Windows).
-   - Ensure BibTeX is included for processing references.
 
 2. **Set Up Files**:
    - Clone or download this repository to your local machine.
-   - Ensure `main.tex` and any referenced files (e.g., `.bib` files, if used) are in the same directory.
+   - Ensure `main.tex` is in the same directory.
 
 3. **Compile the Document**:
    - Open a terminal or command prompt in the project directory.
    - Run the following commands to compile with references:
      ```bash
      pdflatex main.tex
-     bibtex main  # Only if a separate .bib file is used
-     pdflatex main.tex
-     pdflatex main.tex
      ```
-     Note: If references are embedded directly in `main.tex` (e.g., using a manual bibliography), the `bibtex` step may not be needed.
+     Note:  All references are included directly in the `main.tex` file to avoid external `.bib` dependencies.  
+  This ensures smooth compilation and ease of use, especially in Overleaf environments.
 
 4. **View the Output**:
    - The compiled `main.pdf` will be generated in the project directory.
    - Open it with a PDF viewer to verify the output.
-
-## References
-
-The references for the document are included directly within `main.tex`. This may involve:
-- A manual bibliography defined using `\begin{thebibliography}...\end{thebibliography}`.
-- Alternatively, references may use a LaTeX package like `bibentry` or `natbib` with inline entries.
-- If a separate `.bib` file is used (not listed in the provided structure), ensure it is included in the project directory and properly referenced in `main.tex`.
-
+___
+@misc{berger2025transition,
+  author       = {Teodor Berger},
+  title        = {A Legal and Economic Transition Model for AI Integration in the Workforce},
+  year         = {2025},
+  doi          = {10.5281/zenodo.15475991},
+  publisher    = {Zenodo},
+  version      = {v1.0.1},
+  url          = {https://doi.org/10.5281/zenodo.15475991}
+}
+___
 ## Notes
 
 - Ensure all LaTeX packages specified in `main.tex` are available in your compilation environment. Overleaf typically supports most standard packages.
