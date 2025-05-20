@@ -2,12 +2,10 @@
 \usepackage[a4paper,margin=1in]{geometry}
 \usepackage{titlesec}
 \usepackage{fancyhdr}
-\usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage[table,xcdraw]{xcolor}
-\usepackage{lipsum}
-\usepackage{natbib}
+\usepackage[numbers]{natbib} % Adăugat [numbers] pentru stil numeric
 \usepackage{hyperref}
 
 \setlength{\headheight}{14.5pt}
@@ -25,21 +23,21 @@
 \date{May 2025}
 
 \begin{document}
-\sloppy
+\sloppy % Previne depășirile în paragrafe
 \maketitle
 
 \section*{Abstract}
-This project proposes a legal and economic model to support hybrid work contracts in the age of artificial intelligence. The model addresses job security, fair income distribution, and state responsibility in protecting employees affected by AI integration. It aims to bridge the transitional gap caused by the sudden automation of human labor before governments had time to legislate or adapt.
+This project proposes a legal and economic model for hybrid work contracts in the age of artificial intelligence (AI). The model ensures job security, fair income distribution, and state responsibility in protecting employees affected by AI integration. It bridges the transitional gap caused by automation, preventing unjust layoffs and offering flexible schedules with age-based leave benefits. Additionally, a full-time non-hybrid model is introduced for employees working 40 hours/week in shifts, supported indirectly by AI efficiency, with a 12\% salary supplement and negotiable leave.
 
 \section{Introduction}
-The advent of AI in the labor market has triggered widespread replacement of human jobs. Governments and corporations failed to anticipate the social consequences, leading to premature layoffs. This model aims to establish protective measures for employees who were dismissed before the introduction of hybrid contracts involving both AI systems and human workers.
+The rapid adoption of AI in the labor market has led to significant job displacement. Governments and corporations often failed to anticipate the social consequences, resulting in premature layoffs. This model establishes protective measures for employees, ensuring no unjust dismissals occur due to AI integration. It introduces hybrid contracts combining AI systems and human workers, alongside a full-time non-hybrid model for employees in high-intensity roles, supported by AI-driven productivity gains \cite{brynjolfsson2023,acemoglu2021,arntz2016}.
 
 \section{Objectives}
 \begin{itemize}
   \item Prevent unjust layoffs post-AI integration.
-  \item Establish fair salary percentages for hybrid contracts.
-  \item Ensure state participation in income support.
-  \item Recognize age-based bonuses as compensation for long-term service.
+  \item Establish fair salary percentages and leave benefits for hybrid and full-time contracts.
+  \item Ensure state participation in income support with automatic cost recovery.
+  \item Recognize age-based bonuses and leave to reward long-term service.
 \end{itemize}
 
 \section{Model Structure}
@@ -47,110 +45,147 @@ The advent of AI in the labor market has triggered widespread replacement of hum
 \subsection{Legal Principles}
 \begin{enumerate}
   \item \textbf{No Unjust Dismissals:} Employees dismissed before AI integration must be protected or compensated unless layoffs were due to misconduct or company bankruptcy.
-  \item \textbf{State Responsibility:} The state shares 10\% of the salary cost in hybrid contracts to stabilize income.
-  \item \textbf{Contractual Duty:} AI cannot be a legal substitute for contractual obligations without renegotiation or consent.
+  \item \textbf{State Responsibility:} The state contributes 10\% of the salary cost in hybrid contracts, recovered automatically through increased corporate taxes from AI-driven productivity.
+  \item \textbf{Contractual Duty:} AI cannot replace contractual obligations without renegotiation or employee consent.
 \end{enumerate}
 
-\subsection{Weekly Structure and Compensation}
+\subsection{Hybrid Work Compensation Model}
+The hybrid model offers flexible schedules (1--5 days/week) with guaranteed salary percentages, state support, and age-based leave.
 
 \rowcolors{1}{blue!10}{white}
-\begin{table}[h!]
+\begin{table}[!htbp] % Ajustat float specifier
 \centering
-\begin{tabular}{>{\bfseries}c c c c c}
-Workdays/week & Weekly Hours & Base Salary (\%) & State Support (\%) & Total (\%) \\
-\midrule
-1 & 3 h & 55 & 10 & 65 \\
-2 & 6 h & 60 & 10 & 70 \\
-3 & 9 h & 65 & 10 & 75 \\
-4 & 12 h & 70 & 10 & 80 \\
-5 & 15 h & 75 & 10 & 85 \\
+\begin{tabular}{|>{\bfseries}p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|} % Ajustat lățimea coloanelor
+\hline
+Workdays/Week & Weekly Hours & Base Salary (\%) & State Support (\%) & Leave (Days/Month) \\
+\hline
+1 & 3 & 55 & 10 & 2--3 \\
+2 & 6 & 60 & 10 & 2--3 \\
+3 & 9 & 65 & 10 & 2--3 \\
+4 & 12 & 70 & 10 & 2--3 \\
+5 & 15 & 75 & 10 & 2--3 \\
+\hline
 \end{tabular}
-\caption{Hybrid Work Compensation Model}
+\caption{Hybrid Work Compensation Model with Monthly Leave}
 \end{table}
 
-\subsection{Age-Based Bonuses}
+\subsection{Age-Based Bonuses and Leave}
+Bonuses and leave are provided based on age, with flexibility for industry-specific negotiations.
 
-\begin{table}[h!]
+\begin{table}[!htbp]
 \centering
-\begin{tabular}{>{\bfseries}c c}
-Age Range & Bonus (\%) \\
-\midrule
-50--55 & 4 \\
-56--60 & 7 \\
-61+ & 10 \\
+\begin{tabular}{|>{\bfseries}p{3cm}|p{3cm}|p{3cm}|}
+\hline
+Age Range & Salary Bonus (\%) & Leave (Days/Month) \\
+\hline
+18--35 & 0 & 2 \\
+36--54 & 4 & 2.5 \\
+55+ & 7--10 & 3 \\
+\hline
 \end{tabular}
-\caption{Seniority Bonus}
+\caption{Age-Based Bonuses and Monthly Leave}
 \end{table}
 
-\subsection{Example Case: Andrei, Age 57}
+\subsection{Full-Time Non-Hybrid Model}
+Employees working 40 hours/week in 3--4 shifts, supported indirectly by AI efficiency, receive a 12\% salary supplement and negotiable leave.
 
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{|>{\bfseries}p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+Work Schedule & Weekly Hours & Salary Supplement (\%) & Leave (Days/Month) \\
+\hline
+3--4 Shifts & 40 & 12 & 2.5--4 \\
+\hline
+\end{tabular}
+\caption{Full-Time Non-Hybrid Model with AI Support}
+\end{table}
+
+\subsection{Example Case: John, Age 27 (Hybrid Contract)}
 \begin{itemize}
-  \item Work: 4 days/week, 12h total
-  \item Base salary: 70\%
-  \item State support: +10\%
-  \item Age bonus: +7\%
-  \item \textbf{Total: 87\%}
+  \item \textbf{Work}: 4 days/week, 12 hours total
+  \item \textbf{Base Salary}: 70\% (2100 EUR, from 3000 EUR base)
+  \item \textbf{State Support}: +10\% (300 EUR)
+  \item \textbf{Age Bonus}: 0\% (18--35 years)
+  \item \textbf{Total Salary}: 2400 EUR
+  \item \textbf{Leave}: 2 days/month
+\end{itemize}
+
+\subsection{Example Case: Sarah, Age 55+ (Full-Time Non-Hybrid)}
+\begin{itemize}
+  \item \textbf{Work}: 40 hours/week, 3 shifts
+  \item \textbf{Base Salary}: 100\% (3000 EUR)
+  \item \textbf{Shift Supplement}: +12\% (360 EUR)
+  \item \textbf{Age Bonus}: +7\% (210 EUR)
+  \item \textbf{Total Salary}: 3570 EUR
+  \item \textbf{Leave}: 3.5 days/month (3 base + 0.5 negotiated)
 \end{itemize}
 
 \section{Public Cost Recovery and Employment Stability}
 
 \subsection{Overview of the Tripartite Model}
-
-The hybrid work contract model is designed as a tripartite cooperation between the employee, the employer, and the state. Each actor contributes to a stable transition to AI-assisted workflows, with distinct responsibilities and reciprocal benefits.
+The model ensures a balanced transition to AI-assisted workflows through cooperation between employees, employers, and the state, with no actor incurring losses.
 
 \subsection{For Employees}
-
 \begin{itemize}
-  \item \textbf{Job security:} All current employees are transitioned into hybrid contracts by default, ensuring no layoffs occur due to AI implementation.
-  \item \textbf{Flexible schedules:} Employees can choose a reduced work week (1–5 days), with salaries adjusted proportionally but protected by a guaranteed minimum coverage of 55\% to 75\% plus bonuses.
-  \item \textbf{Age bonuses:} Older employees receive salary supplements (4\% for 50–55 years, 7\% for 56–60, and 10\% for 61+), recognizing long-term service.
-  \item \textbf{Dignity preserved:} Employees remain valuable members of the labor force and are not discarded due to technological progress.
+  \item \textbf{Job Security:} All employees are transitioned to hybrid or full-time contracts, preventing layoffs due to AI.
+  \item \textbf{Flexible Schedules:} Hybrid workers choose 1--5 days/week; full-time workers receive a 12\% salary supplement for shifts.
+  \item \textbf{Leave Benefits:} 2--3 days/month for hybrid workers, 2.5--4 days for full-time, negotiable by industry.
+  \item \textbf{Age Bonuses:} 4--10\% salary bonuses for employees aged 36+.
 \end{itemize}
 
-\subsection{For Companies}
-
+\subsection{For Employers}
 \begin{itemize}
-  \item \textbf{No severance costs:} Companies are not required to pay severance packages, as employees remain within the system.
-  \item \textbf{Workforce continuity:} Institutional knowledge and team stability are preserved.
-  \item \textbf{State support:} The state covers 10\% of each adjusted hybrid salary, reducing labor costs during the transition period.
-  \item \textbf{AI implementation freedom:} Firms can deploy AI systems to assist tasks, provided they retain staff under the hybrid framework.
+  \item \textbf{No Severance Costs:} Employees remain in the system, eliminating severance expenses.
+  \item \textbf{Workforce Continuity:} Institutional knowledge is preserved.
+  \item \textbf{State Support:} 10\% salary contribution for hybrid contracts, recovered via taxes on increased profits.
+  \item \textbf{AI Freedom:} Firms can deploy AI, provided they retain staff under hybrid or full-time frameworks.
 \end{itemize}
 
 \subsection{For the State}
-
 \begin{itemize}
-  \item \textbf{Cost-efficient transition:} The 10\% public contribution is far lower than the long-term cost of unemployment benefits, retraining programs, or economic stagnation caused by mass layoffs.
-  \item \textbf{Increased fiscal revenue:} With improved productivity and AI-supported efficiency, companies generate higher taxable income and corporate tax.
-  \item \textbf{Social stability:} Maintaining employment rates reduces social tension and inequality.
-  \item \textbf{Automatic recovery:} As companies become more efficient, the state's contribution can gradually phase out (e.g., over 24 months).
+  \item \textbf{Cost Recovery:} The 10\% contribution is recovered through higher corporate taxes from AI-driven productivity (e.g., 15--20\% profit increase).
+  \item \textbf{Fiscal Revenue:} Increased productivity boosts taxable income.
+  \item \textbf{Social Stability:} Maintaining employment reduces social tension and inequality.
+  \item \textbf{Phased Withdrawal:} State contribution reduces from 10\% to 5\% over 24 months.
 \end{itemize}
 
 \subsection{Cost Recovery Mechanism}
-
-The state's temporary support is offset by:
+The state's contribution is offset by:
 \begin{itemize}
-  \item \textbf{Higher corporate tax revenue} due to AI-augmented productivity.
-  \item \textbf{Reduced welfare spending}—no unemployment benefits or subsidized retraining programs are needed.
-  \item \textbf{Phased withdrawal} of the 10\% over time as AI becomes integrated and companies stabilize revenue margins.
+  \item \textbf{Higher Corporate Taxes:} AI-driven productivity increases profits, generating tax revenue.
+  \item \textbf{Reduced Welfare Spending:} No unemployment benefits or retraining programs needed.
+  \item \textbf{Phased Withdrawal:} State support decreases as companies stabilize.
 \end{itemize}
 
 \subsection{Legal Guarantees}
-
 \begin{itemize}
-  \item Hybrid contracts are introduced via national legislation and automatically apply to all active employees at the time of adoption.
-  \item Companies may not terminate employment due to task automation unless specific misconduct occurs.
-  \item All roles must be preserved and adapted; job elimination is prohibited during the transition period.
+  \item Hybrid and full-time contracts are mandated via national/EU legislation.
+  \item Companies cannot terminate employment due to automation unless misconduct occurs.
+  \item All roles are preserved and adapted during the transition.
+\end{itemize}
+
+\section{Implementation in the European Union}
+The model aligns with EU objectives for a just digital transition:
+\begin{itemize}
+  \item \textbf{EU Directive:} A directive can mandate hybrid and full-time contracts, with state contributions (10\%) funded by EU funds (e.g., Recovery and Resilience Facility).
+  \item \textbf{Pilot Programs:} Test in countries like the Netherlands (flexible labor markets) and Romania (IT and automotive sectors).
+  \item \textbf{Monitoring:} The European Labour Authority (ELA) oversees implementation and fiscal impact.
 \end{itemize}
 
 \section{Conclusion}
-This model defends labor rights in the AI age. Those who were dismissed before governments regulated AI integration must be compensated or reinstated via protected hybrid contracts. Technology should not overwrite dignity, fairness, or human contribution.
+This model defends labor rights in the AI era, ensuring no unjust layoffs, fair compensation, and age-based leave benefits. It supports both hybrid and full-time workers, with state contributions recovered automatically through increased tax revenue, ensuring no losses for employees, employers, or the state.
 
 \section*{References}
+\begin{thebibliography}{9}
+\bibitem{brynjolfsson2023}
+Brynjolfsson, Erik and McAfee, Andrew (2023). \textit{Artificial Intelligence and the Future of Work}. Journal of Economic Perspectives, 37(2), 25--48.
 
-\begin{itemize}
-\item Brynjolfsson, Erik and McAfee, Andrew (2023). \textit{Artificial Intelligence and the Future of Work}. Journal of Economic Perspectives, 37(2), 25--48.
-\item Acemoglu, Daron and Restrepo, Pascual (2021). \textit{AI and Jobs: Evidence from Online Vacancies}. NBER Working Paper No. 28961.
-\item Arntz, Melanie, Gregory, Terry, and Zierahn, Ulrich (2016). \textit{The Risk of Automation for Jobs in OECD Countries}. OECD Social, Employment and Migration Working Papers, 189.
-\end{itemize}
+\bibitem{acemoglu2021}
+Acemoglu, Daron and Restrepo, Pascual (2021). \textit{AI and Jobs: Evidence from Online Vacancies}. NBER Working Paper No. 28961.
+
+\bibitem{arntz2016}
+Arntz, Melanie, Gregory, Terry, and Zierahn, Ulrich (2016). \textit{The Risk of Automation for Jobs in OECD Countries}. OECD Social, Employment and Migration Working Papers, 189.
+\end{thebibliography}
 
 \end{document}
