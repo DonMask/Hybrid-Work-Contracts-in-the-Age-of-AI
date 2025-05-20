@@ -81,4 +81,4 @@ This project is licensed under the terms specified in the `LICENSE` file.
 
 ## Contact
 
-For questions or issues with compilation, feel free to open an issue in this repository or contact the project maintainer.
+bergerteodor@googlemail.com
