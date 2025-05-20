@@ -82,3 +82,5 @@ This project is licensed under the terms specified in the `LICENSE` file.
 ## Contact
 
 bergerteodor@googlemail.com
+
+https://github.com/DonMask/Hybrid-Work-Contracts-in-the-Age-of-AI/tree/main
