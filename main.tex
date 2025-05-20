@@ -1,132 +1,122 @@
 \documentclass[12pt]{article}
-\usepackage[a4paper,margin=1in]{geometry}
-\usepackage{titlesec}
-\usepackage{lmodern}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[dvipsnames]{xcolor}
-\usepackage{colortbl} % necesar pentru \rowcolors
-\usepackage{booktabs}
+\usepackage[margin=1in]{geometry}
 \usepackage{array}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{fancyhdr}
-\usepackage[numbers]{natbib}
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    citecolor=blue,
-    urlcolor=blue
-}
+\usepackage{lipsum}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{float}
 
 \setlength{\headheight}{14.5pt}
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{Page \thepage}
+\rhead{\thepage}
 
-\title{
-    \textbf{Hybrid Work Contracts in the Age of Artificial Intelligence}\\[1ex]
-    \large \normalfont A legal and economic transition model
-}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+
+\title{\large A Legal and Economic Transition Model for AI Integration in the Workforce}
 \author{Teodor Berger}
-\date{May 2025}
+\date{May 20, 2025}
 
 \begin{document}
+
 \maketitle
 
-\begin{abstract}
-This academic proposal introduces a hybrid work model designed to protect workers from displacement due to AI integration. It outlines a phased reduction in workload while preserving employment status and salary rights, and proposes a legal mechanism obligating governments and AI companies to compensate employees affected prior to the model's adoption.
-\end{abstract}
+\section*{Abstract}
+This academic proposal outlines a structured legal and economic framework designed to mitigate mass layoffs caused by AI integration across global labor markets. It proposes a flexible hybrid contract model to preserve human employment and dignity, avoid economic collapse, and ensure corporate, governmental, and ethical responsibility.
 
 \section{Introduction}
-The emergence of generative artificial intelligence tools has rapidly transformed the global labor market. Without adequate preparation or regulatory frameworks, millions of employees risked losing their jobs before any new legal protection models were adopted. This proposal presents a legally binding hybrid work contract system that governments must implement to prevent social and economic instability.
+The accelerated implementation of AI systems across industries has resulted in the displacement of countless workers before any legal or transitional protections were in place. This proposal introduces a Hybrid Employment Contract Model (HECM), which must be implemented immediately to prevent further harm and to restore justice for employees already affected.
 
-\section{General Principles}
-\begin{enumerate}
-    \item \textbf{No Unjust Dismissals:} Employees affected by AI are not allowed to be terminated unless they violate professional ethics or commit acts of misconduct.
-    \item \textbf{Hybrid Contract:} Employees can transition to a hybrid contract offering between 1 and 5 working days per week.
-    \item \textbf{Proportional Pay:} Base salary is reduced according to working time, with compensatory bonuses.
-    \item \textbf{Income Protection:} An additional 10\% of salary is covered by the state.
-    \item \textbf{Age Compensation:} Employees over 50 receive additional pay bonuses based on age.
-\end{enumerate}
+If governments fail to regulate AI deployment or do not offer protective measures from the start, affected employees must be financially compensated and re-employed by state obligation or assigned an equivalent public-sector position.
 
-\section{Work Time and Salary Structure}
+\section{Core Principles}
 
-\begin{table}[ht]
+\subsection{1. No Forced Dismissals}
+Employees cannot be dismissed solely because of AI implementation. Exceptions apply only in cases of:
+\begin{itemize}
+  \item Serious misconduct or legal violations.
+  \item Voluntary resignation.
+  \item Documented incapacity to fulfill the adjusted role.
+\end{itemize}
+
+\subsection{2. Flexible Contract Options}
+Each employee can select a hybrid model adapted to their availability:
+\begin{itemize}
+  \item 1–5 working days per week.
+  \item Fixed hourly workload: 3 hours/day.
+  \item Weekly cap: 15 hours.
+\end{itemize}
+
+\section{Revised Compensation Structure}
+Employees earn a scaled salary based on number of days worked, combined with state-sponsored compensation and age-related bonuses.
+
+\begin{table}[H]
 \centering
 \rowcolors{1}{blue!10}{white}
-\begin{tabular}{|c|c|c|c|}
-\hline
-\textbf{Days/Week} & \textbf{Total Hours} & \textbf{Base Salary (\%)} & \textbf{Total Salary (\%)} \\ \hline
-1 & 3 & 71 & 81 \\ \hline
-2 & 6 & 73 & 83 \\ \hline
-3 & 9 & 74 & 84 \\ \hline
-4 & 12 & 75 & 85 \\ \hline
-5 & 15 & 75 & 85 \\ \hline
+\begin{tabular}{>{\raggedright}p{3cm} >{\centering}p{2.5cm} >{\centering}p{2.5cm} >{\centering}p{2.5cm} >{\centering\arraybackslash}p{2.5cm}}
+\toprule
+\textbf{Workdays/week} & \textbf{Weekly Hours} & \textbf{Base Salary (\%)} & \textbf{State Support (\%)} & \textbf{Total (\%)} \\
+\midrule
+1 day  & 3h   & 55\% & 10\% & 65\% \\
+2 days & 6h   & 60\% & 10\% & 70\% \\
+3 days & 9h   & 65\% & 10\% & 75\% \\
+4 days & 12h  & 70\% & 10\% & 80\% \\
+5 days & 15h  & 75\% & 10\% & 85\% \\
+\bottomrule
 \end{tabular}
-\caption{Base salary and total salary (including 10\% state support)}
+\caption{Hybrid Work Compensation Table (Without Age Bonus)}
 \end{table}
 
-\section{Age Bonus Policy}
+\subsection{Age Bonus (Cumulative)}
 \begin{itemize}
-    \item Age 50–55: +4\% salary bonus
-    \item Age 56–60: +7\% salary bonus
-    \item Age 61+: +10\% salary bonus
+  \item Age 50–55: +4\%
+  \item Age 56–60: +7\%
+  \item Age 61+: +10\%
 \end{itemize}
 
 \section{Case Studies}
 
 \subsection{Maria (Age 25) – Nurse}
-Maria chooses to work 1 day per week (3 hours total).
+Maria chooses a 3-day/week contract (9h total). She receives:
 \begin{itemize}
-    \item Base salary: 71\%
-    \item State support: +10\%
-    \item Total: \textbf{81\%}
+  \item Base salary: 65\%
+  \item State support: 10\%
+  \item Age bonus: 0\%
+  \item \textbf{Total: 75\%}
 \end{itemize}
 
 \subsection{Andrei (Age 57) – Factory Worker}
-Andrei works 4 days per week (12 hours total).
+Andrei works four days a week (12h total). He receives:
 \begin{itemize}
-    \item Base salary: 75\%
-    \item State support: +10\%
-    \item Age bonus: +7\%
-    \item Total: \textbf{92\%}
+  \item Base salary: 70\%
+  \item State support: 10\%
+  \item Age bonus: 7\%
+  \item \textbf{Total: 87\%}
 \end{itemize}
 
-\section{Legal Liability for Early Displacements}
-If companies or AI developers (e.g., OpenAI, xAI) introduced models that implicitly replaced human labor without notifying governments in advance, the responsibility lies with both the company and the state. Affected workers must be:
+\section{Legal Obligations}
+Any AI developer (e.g., OpenAI, xAI) must notify the state prior to deployment of workforce-displacing technologies. Governments must:
 \begin{itemize}
-    \item Financially compensated for moral and economic damages.
-    \item Rehired into their previous role or offered an equivalent job.
-\end{itemize}
-
-\section{Implementation Recommendations}
-\begin{itemize}
-    \item Apply the model in AI-impacted sectors: administration, health, education, industry.
-    \item Gradually extend to other vulnerable sectors.
-    \item Enforce contracts via national labor codes.
+  \item Provide immediate reemployment options.
+  \item Compensate affected employees if no prior legal protections were implemented.
 \end{itemize}
 
 \section{Conclusion}
-Hybrid work contracts offer a realistic, fair, and scalable solution to mass job displacement. With proportional working time and guaranteed protections, both companies and employees benefit from a smooth, dignified transition into the AI era.
+This policy proposes a just transition mechanism for workers displaced by AI. It ensures fairness, economic continuity, and shared responsibility. Failure to implement will result in further inequality and state-level accountability.
 
-\begin{thebibliography}{9}
-
-\bibitem{brynjolfsson2023ai}
-Brynjolfsson, E., \& McAfee, A. (2023).
-\textit{Artificial Intelligence and the Future of Work}.
-Journal of Economic Perspectives, 37(2), 25–48.
-
-\bibitem{acemoglu2021ai}
-Acemoglu, D., \& Restrepo, P. (2021).
-\textit{AI and Jobs: Evidence from Online Vacancies}.
-NBER Working Paper No. 28961.
-
-\bibitem{arntz2016risk}
-Arntz, M., Gregory, T., \& Zierahn, U. (2016).
-\textit{The Risk of Automation for Jobs in OECD Countries}.
-OECD Social, Employment and Migration Working Papers, 189.
-
-\end{thebibliography}
+\section*{References}
+\begin{itemize}
+  \item Brynjolfsson, E., \& McAfee, A. (2023). Artificial Intelligence and the Future of Work. \textit{Journal of Economic Perspectives, 37}(2), 25–48.
+  \item Acemoglu, D., \& Restrepo, P. (2021). AI and Jobs: Evidence from Online Vacancies. \textit{NBER Working Paper No. 28961}.
+  \item Arntz, M., Gregory, T., \& Zierahn, U. (2016). The Risk of Automation for Jobs in OECD Countries. \textit{OECD Social, Employment and Migration Working Papers, 189}.
+\end{itemize}
 
 \end{document}
