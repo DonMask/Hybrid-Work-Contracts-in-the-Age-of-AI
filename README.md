@@ -62,10 +62,10 @@ If you prefer to compile the document locally:
   author       = {Teodor Berger},
   title        = {A Legal and Economic Transition Model for AI Integration in the Workforce},
   year         = {2025},
-  doi          = {10.5281/zenodo.15475991},
+  doi          = {10.5281/zenodo.15476845},
   publisher    = {Zenodo},
   version      = {v1.0.1},
-  url          = {https://doi.org/10.5281/zenodo.15475991}
+  url          = {https://doi.org/10.5281/zenodo.15476845}
 }
 ```
 ## Notes
